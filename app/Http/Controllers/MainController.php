@@ -14,7 +14,8 @@ class MainController extends Controller
     public function index()
     {
         $data = [
-            'name' => 'Darana Sukma Vidya'
+            'name' => 'Darana Sukma Vidya',
+            'birth' => '16 September 1991'
         ];
         return response()->json($data);
     }
