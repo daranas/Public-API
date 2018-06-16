@@ -13,9 +13,12 @@ class MainController extends Controller
     // index
     public function index()
     {
+        $experience = "test";
         $data = [
             'name' => 'Darana Sukma Vidya',
-            'birth' => '16 September 1991'
+            'email' => 'darana.sv@gmail.com',
+            'phone' => '082121770707',
+            // 'experience' => $experience
         ];
         return response()->json($data);
     }
