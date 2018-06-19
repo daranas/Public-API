@@ -17,8 +17,7 @@ class MainController extends Controller
         $data = [
             'name' => 'Darana Sukma Vidya',
             'email' => 'darana.sv@gmail.com',
-            'phone' => '082121770707',
-            'born' => '16 September 1991'
+            'phone' => '082121770707'
             // 'experience' => $experience
         ];
         return response()->json($data);
