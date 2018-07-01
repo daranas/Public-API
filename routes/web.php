@@ -16,3 +16,14 @@ $app->get('/', 'MainController@index');
 $app->get('/key', function () {
     return str_random(32);
 });
+
+// auth
+$app->post('/login', 'UserController@login');
+$app->post('/register', 'UserController@register');
+
+// user
+$app->group(['middleware' => 'auth', 'prefix' => 'user'], function () use ($app) {
+    $app->get('/', function () {
+        echo "Users";
+    });
+});
